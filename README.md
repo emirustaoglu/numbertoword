@@ -49,13 +49,13 @@ composer install
 ## 💻 Kullanım Örneği
 
 ```php
-use emirustaoglu\numbertowords;
+use emirustaoglu\numbertoword;
 /**
 * @param string $language  Dil kodunu belirtiniz. tr|en varsayılan tr
 * @param string $langFolder Kendi dil dosyanızı kullanacaksınız tam klasör yolunu belirtiniz.
 * @return void
 */
-$convert = new numbertowords();
+$convert = new numbertoword();
 /**
 @param float $sayi   Yazıya çevrilecek rakamı iletiniz. Örn: 99.99
 @param int $kurusbasamak Kuruş hanesinin kaç basamak olacağını beliriniz. Örn: 2 

@@ -1,6 +1,6 @@
 <?php
 
-namespace emirustaoglu\numbertowords;
+namespace emirustaoglu\numbertoword;
 
 class paraKuruslari implements \ArrayAccess
 {

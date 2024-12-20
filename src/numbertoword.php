@@ -2,12 +2,12 @@
 
 namespace emirustaoglu;
 
-use emirustaoglu\numbertowords\paraKuruslari;
+use emirustaoglu\numbertoword\paraKuruslari;
 
 /**
  *
  */
-class numbertowords
+class numbertoword
 {
     /**
      * @var mixed|string
