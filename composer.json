@@ -1,6 +1,6 @@
 {
   "name": "emirustaoglu/numbertoword",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "library",
   "description": "Bu PHP Kütüphanesi ile faturaların açıklama kısmında ödeme tutarını yazıyla kolayca belirtebilirsiniz.",
   "keywords": [
@@ -21,7 +21,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "emirustaoglu\\numbertoword\\": "src/"
+      "emirustaoglu\\": "src/"
     }
   },
   "minimum-stability": "dev",

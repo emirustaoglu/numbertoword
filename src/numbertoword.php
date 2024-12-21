@@ -2,22 +2,27 @@
 
 namespace emirustaoglu;
 
-use emirustaoglu\numbertoword\paraKuruslari;
 
-/**
- *
- */
 class numbertoword
 {
-    /**
-     * @var mixed|string
-     */
     private $language;
-    /**
-     * @var
-     */
     private $translations;
     private $langFolder;
+    private $kuruslar = array(
+        "TRY" => "KURUŞ",
+        "USD" => "CENT",
+        "AUD" => "CENT",
+        "DKK" => "ÖRE",
+        "EUR" => "CENT",
+        "GBP" => "",
+        "CHF" => "",
+        "SEK" => "ÖRE",
+        "CAD" => "CENT",
+        "KWD" => "DİRHEM",
+        "NOK" => "CENT",
+        "SAR" => "HALATA",
+        "JPY" => "SEN"
+    );
 
     /**
      * @param string $language Dil kodunu belirtiniz. tr|en varsayılan tr
@@ -209,27 +214,11 @@ class numbertoword
 
     public function getCurrencyType()
     {
-        $paraTipleri = array(
-            "TRY" => "KURUŞ",
-            "USD" => "CENT",
-            "AUD" => "CENT",
-            "DKK" => "ÖRE",
-            "EUR" => "CENT",
-            "GBP" => "",
-            "CHF" => "",
-            "SEK" => "ÖRE",
-            "CAD" => "CENT",
-            "KWD" => "DİRHEM",
-            "NOK" => "CENT",
-            "SAR" => "HALATA",
-            "JPY" => "SEN"
-        );
-        return $paraTipleri;
+        return $this->kuruslar;
     }
 
     private function getCurrency($paraBirim)
     {
-        $paraKurus = new paraKuruslari();
-        return $paraKurus[$paraBirim];
+        return $this->kuruslar[$paraBirim];
     }
 }
